@@ -6,7 +6,12 @@
     "scripts": {
       "start": "node src/index.js",
       "dev": "nodemon src/index.js",
-      "test": "jest"
+      "test": "jest --runInBand",
+      "test:unit": "jest --testMatch='**/tests/unit/**/*.test.js'",
+      "test:integration": "jest --testMatch='**/tests/integration/**/*.test.js'",
+      "test:e2e": "jest --testMatch='**/tests/e2e/**/*.test.js'",
+      "test:watch": "jest --watch",
+      "test:coverage": "jest --coverage"
     },
     "dependencies": {
       "cors": "^2.8.5",
