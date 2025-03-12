@@ -56,11 +56,6 @@ npm run dev
 npm start
 ```
 
-### Testes
-```bash
-npm test
-```
-
 ## Estrutura do Projeto
 
 ```
